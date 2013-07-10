@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 function read_index() {
-	  return  fs.readFileSync(__dirname + '/index.html/');
+	 return  fs.readFileSync(process.env.PWD + '/../index.html');
 	};
 	
 
